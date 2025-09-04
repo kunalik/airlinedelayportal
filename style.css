@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #004080;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal line under nav */
+hr {
+    border: 0;
+    border-top: 2px solid #004080;
+    margin-bottom: 20px;
+}
+
+/* Main content styling */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    color: #004080;
+    text-align: center;
+}
+
+h2 {
+    color: #0066cc;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #0059b3;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Links in main content */
+main a {
+    color: #004080;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 15px 20px;
+    }
+}
