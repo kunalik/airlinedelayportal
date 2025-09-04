@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Results - Airline Delay Data Analysis</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Results</h1>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="overview.html">Project Overview</a> |
+    <a href="results.html">Results</a> |
+    <a href="about.html">About</a>
+  </nav>
+
+  <h2>Key Findings</h2>
+  <ul>
+    <li>Delays increased by <strong>15%</strong> compared to the previous year.</li>
+    <li>Top 3 airports with longest wait times identified.</li>
+    <li>Breakdown of delay types: weather, technical, scheduling.</li>
+  </ul>
+
+  <h2>Visualizations</h2>
+
+  <h3>Delay Types Breakdown</h3>
+  <canvas id="delayPieChart" width="400" height="200"></canvas>
+
+  <h3>Top Airports with Longest Delays</h3>
+  <canvas id="airportBarChart" width="400" height="200"></canvas>
+
+  <h3>Trend of Delays Over Years</h3>
+  <canvas id="trendLineChart" width="400" height="200"></canvas>
+
+  <script>
+    // Pie chart: Delay types
+    new Chart(document.getElementById("delayPieChart"), {
+      type: 'pie',
+      data: {
+        labels: ["Weather", "Technical", "Scheduling"],
+        datasets: [{
+          data: [35, 25, 40],
+          backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"]
+        }]
+      }
+    });
+
+    // Bar chart: Top 3 airports
+    new Chart(document.getElementById("airportBarChart"), {
+      type: 'bar',
+      data: {
+        labels: ["JFK", "LAX", "ORD"],
+        datasets: [{
+          label: "Average Delay (minutes)",
+          data: [45, 50, 55],
+          backgroundColor: "#36A2EB"
+        }]
+      }
+    });
+
+    // Line chart: Trend of delays
+    new Chart(document.getElementById("trendLineChart"), {
+      type: 'line',
+      data: {
+        labels: ["2019", "2020", "2021", "2022"],
+        datasets: [{
+          label: "Delays (%)",
+          data: [20, 25, 30, 45],
+          borderColor: "#FF6384",
+          fill: false
+        }]
+      }
+    });
+  </script>
+</body>
+</html>

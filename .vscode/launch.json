@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+   
+            "version": "0.2.0",
+            "configurations": [
+              {
+                "type": "chrome",
+                "request": "launch",
+                "name": "Open index.html",
+                "file": "/Users/kunalireddy/Desktop/airline-delay-portal/index.html"
+              },
+              {
+                "type": "chrome",
+                "request": "launch",
+                "name": "Open about.html",
+                "file": "/Users/kunalireddy/Desktop/airline-delay-portal/about.html"
+              },
+              {
+                "type": "chrome",
+                "request": "launch",
+                "name": "Open overview.html",
+                "file": "/Users/kunalireddy/Desktop/airline-delay-portal/overview.html"
+              },
+              {
+                "type": "chrome",
+                "request": "launch",
+                "name": "Open results.html",
+                "file": "/Users/kunalireddy/Desktop/airline-delay-portal/results.html"
+              }
+            ]
+          }
+          
